@@ -8,10 +8,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <nav style={{ display: 'flex', gap: 24, justifyContent: 'center', margin: 24 }}>
-          <Link to="/">Produktkonfigurator</Link>
-          <Link to="/tabelle">Tabelle</Link>
-          <Link to="/buchen">Buchungsformular</Link>
+        <nav style={{ display: 'flex', gap: 24, justifyContent: 'center', paddingTop: 24, paddingBottom: 24 }}>
+          <Link to="/"><p>Produktkonfigurator</p> </Link>
+          <Link to="/tabelle"><p>Tabelle</p></Link>
+          <Link to="/buchen"><p>Buchungsformular</p></Link>
         </nav>
         <Routes>
           <Route path="/" element={<Configurator />} />
